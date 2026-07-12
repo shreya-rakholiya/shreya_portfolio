@@ -16,14 +16,39 @@ export const Contact: React.FC = () => {
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("submitting");
 
-    setTimeout(() => {
-      setStatus("success");
-      setFormState({ name: "", email: "", company: "", message: "" });
-    }, 1000);
+    try {
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${portfolioData.email}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: formState.name,
+            email: formState.email,
+            company: formState.company || "Not specified",
+            message: formState.message,
+            _subject: `Portfolio Contact from ${formState.name}`,
+          }),
+        }
+      );
+
+      if (response.ok) {
+        setStatus("success");
+        setFormState({ name: "", email: "", company: "", message: "" });
+      } else {
+        throw new Error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      setStatus("error");
+    }
   };
 
   return (
