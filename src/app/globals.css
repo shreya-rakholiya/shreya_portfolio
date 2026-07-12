@@ -137,7 +137,20 @@ html.light .pill-highlight {
   font-weight: 700 !important;
 }
 
-html.light .pill-normal {
+html.light .btn-dark-solid {
+  background: #020617 !important;
+  color: #ffffff !important;
+  border: 1px solid #1e293b !important;
+}
+
+html.light .btn-dark-solid {
+  background: #09090b !important;
+  color: #ffffff !important;
+  border: 1px solid #1e293b !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+}
+
+.pill-normal {
   background: #f8fafc !important;
   border: 1px solid #cbd5e1 !important;
   color: #0f172a !important;

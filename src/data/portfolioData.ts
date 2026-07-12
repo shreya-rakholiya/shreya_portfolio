@@ -62,7 +62,8 @@ export const portfolioData: PortfolioData = {
         "OpenAI API",
         "Store SDKs",
       ],
-      liveUrl: "https://play.google.com",
+      liveUrl:
+        "https://play.google.com/store/apps/details?id=com.tunex.aimusicgenerator.aisongmaker",
     },
     {
       id: "imposter-game",
@@ -88,7 +89,8 @@ export const portfolioData: PortfolioData = {
         "Firebase FCM",
         "Docker",
       ],
-      liveUrl: "https://play.google.com",
+      liveUrl:
+        "https://play.google.com/store/apps/details?id=com.guesswho.impostergame.imposter",
     },
     {
       id: "matchly",
@@ -140,7 +142,7 @@ export const portfolioData: PortfolioData = {
         "Gemini API",
         "Grok API",
       ],
-      liveUrl: "https://genxi.io",
+      liveUrl: "https://genxi.io/blogs",
     },
     {
       id: "bookify",
