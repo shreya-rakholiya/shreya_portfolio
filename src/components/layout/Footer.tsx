@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <p className="text-sm font-bold text-slate-950">
-            © {new Date().getFullYear()} {portfolioData.name}. Built with Next.js & Tailwind CSS.
+            © {new Date().getFullYear()} {portfolioData.name}
           </p>
         </div>
         <div className="flex items-center gap-6 font-bold">
@@ -19,22 +19,22 @@ export const Footer: React.FC = () => {
           >
             LinkedIn
           </a>
-          <a
+          {/* <a
             href="https://matchly.me"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-950 hover:text-slate-800 underline-offset-4 hover:underline transition-all"
           >
             matchly.me
-          </a>
-          <a
+          </a> */}
+          {/* <a
             href="https://genxi.io"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-slate-950 hover:text-slate-800 underline-offset-4 hover:underline transition-all"
           >
             genxi.io
-          </a>
+          </a> */}
           <a
             href={`mailto:${portfolioData.email}`}
             className="text-sm text-slate-950 hover:text-slate-800 underline-offset-4 hover:underline transition-all"

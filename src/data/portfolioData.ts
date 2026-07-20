@@ -9,7 +9,7 @@ export const portfolioData: PortfolioData = {
   availability: "Open to remote work worldwide",
   email: "rakholiyashreya@gmail.com",
   phone: "+917359098284",
-  linkedin: "https://www.linkedin.com/in/shreyarakholiya",
+  linkedin: "https://in.linkedin.com/in/shreyarakholiya",
   stats: [
     { value: "1.5+", label: "Years Professional Experience" },
     { value: "2", label: "Apps Live on Play Store" },
@@ -284,7 +284,7 @@ export const portfolioData: PortfolioData = {
     tagline: "Backend Developer building secure, scalable software.",
     bio: [
       "I am a Backend Developer with 1.5+ years of experience building secure and scalable web applications at 10turtle and on live production products.",
-      "Skilled in Node.js, Express.js, TypeScript, MongoDB, and REST API development, with strong hands-on work in CRUD operations, JWT authentication, role-based access control, and third-party API integration. Also experienced with Strapi CMS, PostgreSQL, and Python REST APIs.",
+      "Skilled in Node.js, Express.js, TypeScript, MongoDB, and REST API development, with strong hands-on work in CRUD operations, JWT authentication, role-based access control, and third-party API integration. Also experienced with PostgreSQL, Prisma ORM.",
       "I enjoy writing clean, simple code that solves real business problems and delivering reliable solutions on time.",
     ],
     strengths: [
